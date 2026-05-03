@@ -151,7 +151,8 @@ class HSKQuizGame {
 
     private async startQuiz(): Promise<void> {
         const level = parseInt(this.hskLevelSelect.value);
-        const questionCount = parseInt(this.questionCountSelect.value);
+        const countValue = this.questionCountSelect.value;
+        const questionCount = countValue === 'all' ? Infinity : parseInt(countValue);
         const mode = this.quizModeSelect.value;
 
         try {

@@ -30,6 +30,7 @@
                     <option value="10" selected>10問</option>
                     <option value="20">20問</option>
                     <option value="30">30問</option>
+                    <option value="all">全て</option>
                 </select>
             </div>
 
